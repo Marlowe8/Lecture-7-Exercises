@@ -12,17 +12,21 @@ int Display() {
 
 void markGrade(int Grade) {
 
-	if (Grade >= 70) {
-		cout << "Student's mark is: A " << endl;
-	}
-	else if (Grade >= 60 && Grade <= 69) {
-		cout << "Student's mark is: B " << endl;
-	}
-	else if (Grade >= 50 && Grade <= 59) {
-		cout << "Student's mark is: C " << endl;
-	}
-	else if (Grade >= 40 && Grade <= 49) {
-		cout << "Student's mark is: D " << endl;
+	if (Grade >= 40 && Grade <= 100) {
+		if (Grade >= 70) {
+			cout << "Student's mark is: A " << endl;
+		}
+		else if (Grade >= 60 && Grade <= 69) {
+			cout << "Student's mark is: B " << endl;
+		}
+		else if (Grade >= 50 && Grade <= 59) {
+			cout << "Student's mark is: C " << endl;
+		}
+		else if (Grade >= 40 && Grade <= 49) {
+			cout << "Student's mark is: D " << endl;
+		}
+	}else if (Grade >= 101) {
+		cout << "TOO MUCH GRADE!!!" << endl;
 	}
 	else {
 		cout << "Student's mark is: F" << endl;
@@ -37,8 +41,8 @@ int main() {
 
 	return 0;
 }
- 
-                                          
+
+                                     
                                           
 //Slide 17 (Starting a Band)
 						      
