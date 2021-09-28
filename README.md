@@ -40,3 +40,63 @@ int main() {
  
                                           
                                           
+//Slide 17 (Starting a Band)
+						      
+#include <iostream>
+using namespace std;
+
+
+
+bool stringTest(string ins) {
+	string friendPlaysG = "Guitar", friendPlaysg = "guitar";
+	string friendPlaysD = "Drums", friendPlaysd = "drums";
+
+
+	if (ins == friendPlaysG || ins == friendPlaysg) {
+		return true;
+	}
+	else if (ins == friendPlaysD || ins == friendPlaysd || ins == "drum" || ins == "Drum") {
+		return true;
+	}
+	else {
+		return false;
+	}
+
+}
+void Display() {
+	char choice;
+	bool musicalFriend = true;
+	string instrument;
+	while (musicalFriend) {
+		cout << "Can you play instrument?\nPress 'y' for yes and Press 'n' for no: "; cin >> choice;
+		system("cls");
+		if (choice == 'y') {
+			cout << "What instrument do you play?: "; cin >> instrument;
+			if (stringTest(instrument)) {
+				system("cls");
+				cout << "cool! you're in, since you can play " << instrument;
+				musicalFriend = false;
+			}
+			else {
+				system("cls");
+				cout << "Sorry we don't need that at the moment" << endl;
+				musicalFriend = false;
+			}
+		}
+		else if (choice == 'n') {
+			cout << "You're not for this" << endl;
+			musicalFriend = false;
+		}
+		else {
+			cout << "It's not in the choices try again" << endl << endl;
+		}
+	}
+}
+int main() {
+
+	Display();
+
+	return 0;
+}
+	
+	
