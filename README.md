@@ -104,3 +104,49 @@ int main() {
 }
 	
 	
+//Slide 19 (Killing Time)
+	
+#include <iostream>
+using namespace std;
+
+
+void Display() {
+	char firstChoice, secondChoice;
+	bool Friend = true;
+	
+	while (Friend) {
+		cout << "Is your friend going to be with you less than 15 mins?\nPress 'y' for yes and Press 'n' for no: "; cin >> firstChoice;
+		system("cls");
+		if (firstChoice == 'y') {
+			cout << "Sit in the food zone and wait." << endl;
+			Friend = false;
+		}
+		else if (firstChoice == 'n') {
+			system("cls");
+			cout << "Do you have extra money? more than 5 AED?\nPress 'y' for yes and Press 'n' for no: "; cin >> secondChoice;
+			if (secondChoice == 'y') {
+				cout << "\ngo buy a drink or snacks" << endl;
+				Friend = false;
+			}
+			else if (secondChoice == 'n') {
+				cout << "\ngo for a walk around the town " << endl;
+				Friend = false;
+			}
+			else {
+				system("cls");
+				cout << "It's not in the choices try again" << endl << endl;
+			}
+		}
+		else {
+			cout << "It's not in the choices try again" << endl << endl;
+		}
+	}
+}
+
+int main() {
+
+
+	Display();
+
+	return 0;
+}
