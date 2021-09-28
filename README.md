@@ -153,7 +153,7 @@ int main() {
 	
 	
 	
-**//Slide 29 (Earthquake)**
+**//Slide 20 (Earthquake)**
 	
 #include <iostream>
 using namespace std;
