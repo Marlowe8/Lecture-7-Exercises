@@ -1,4 +1,4 @@
-//Slide 16 (Mark my words)
+**//Slide 16 (Mark my words)**
 
 #include <iostream>
 using namespace std;
@@ -44,7 +44,7 @@ int main() {
 
                                      
                                           
-//Slide 17 (Starting a Band)
+**//Slide 17 (Starting a Band)**
 						      
 #include <iostream>
 using namespace std;
@@ -104,7 +104,7 @@ int main() {
 }
 	
 	
-//Slide 19 (Killing Time)
+**//Slide 19 (Killing Time)**
 	
 #include <iostream>
 using namespace std;
@@ -150,3 +150,61 @@ int main() {
 
 	return 0;
 }
+	
+	
+	
+**//Slide 29 (Earthquake)**
+	
+#include <iostream>
+using namespace std;
+
+
+int Display() {
+	float Earthquake = 0;
+	cout << "Enter earthquake's magnitude: "; cin >> Earthquake;
+	return Earthquake;
+}
+
+void MagnitudeTest(float Earthquake) {
+
+	if (Earthquake >= 2.0 && Earthquake <= 10.0) {
+		
+		if (Earthquake <= 10.0 && Earthquake >= 8.0) {
+			cout << "The earthquake was Great" << endl;
+		}
+		else if (Earthquake <= 8.0 && Earthquake >= 7.0) {
+			cout << "The earthquake was Major" << endl;
+		}
+		else if (Earthquake <= 7.0 && Earthquake >= 6.0) {
+			cout << "The earthquake was Strong" << endl;
+		}
+		else if (Earthquake <= 6.0 && Earthquake >= 5.0) {
+			cout << "The earthquake was Moderate" << endl;
+		}
+		else if (Earthquake <= 5.0 && Earthquake >= 4.0) {
+			cout << "The earthquake was Light" << endl;
+		}
+		else if (Earthquake <= 4.0 && Earthquake >= 3.0) {
+			cout << "The earthquake was Minor" << endl;
+		}
+		else if (Earthquake <= 3.0 && Earthquake >= 2.0) {
+			cout << "The earthquake was Very Minor" << endl;
+		}
+	}
+	else if (Earthquake >= 11) {
+		cout << "The earthquake was Meteoric" << endl;
+	}
+	else {
+		cout << "The earthquake was Micro" << endl;
+	}
+}
+
+int main() {
+
+	int Earthquake = 0;
+	Earthquake = Display();
+	MagnitudeTest(Earthquake);
+
+	return 0;
+}
+
